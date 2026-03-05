@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import AppNavigator from './src/navigation/AppNavigator';
 import { configureGoogleSignIn } from './src/services/authService';
+import Config from 'react-native-config';
 
-const WEB_CLIENT_ID =
-  '1011214304127-8hl1hh12b99v81q0kigtmmmlqmn6lvhu.apps.googleusercontent.com'; // Replace with Web Client ID from Firebase Console → Auth → Sign-in method → Google
+const WEB_CLIENT_ID = Config.GOOGLE_WEB_CLIENT_ID ?? '';
 
 export default function App() {
   useEffect(() => {
