@@ -34,6 +34,10 @@ android/keystores/
 *.keystore
 *.jks
 
+# Firebase config (sensitive - do not commit)
+ios/GoogleService-Info.plist
+android/app/google-services.json
+
 # iOS
 ios/build/
 *.ipa
